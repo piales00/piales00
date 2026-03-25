@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00E6FF&center=true&vCenter=true&width=620&lines=Hey%2C+I'm+Piero+Alessandro+%F0%9F%91%BE;Backend+Dev+%E2%86%92+AI+Engineer+Path;Building+the+future%2C+one+commit+at+a+time." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00E6FF&center=true&vCenter=true&width=620&lines=Hey%2C+I'm+Piero+Alessandro+%F0%9F%91%BE;Backend+Dev+%E2%86%92+AI+Engineer+Path;BBuilding+the+future%2C+one+commit+at+a+timee." alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -75,7 +75,7 @@ Sistema de **arbitraje descentralizado impulsado por IA**. Múltiples validadore
 
 #### 🎮 [Tetris Juego](https://github.com/piales00/Tetris-juego)
 
-> *"Quien tiene un porqué soporta casi cualquier cómo."*
+> *"Un juego clásico."*
 
 Implementación del clásico **Tetris en Java**. Lógica de juego, manejo de estado y bucles de eventos — construido con propósito.
 
