@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00E6FF&center=true&vCenter=true&width=620&lines=Hey%2C+I'm+Piero+Alessandro+%F0%9F%91%BE;Backend+Dev+%E2%86%92+AI+Engineer+Path;BBuilding+the+future%2C+one+commit+at+a+timee." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00E6FF&center=true&vCenter=true&width=620&lines=Hey%2C+I'm+Piero+Alessandro+%F0%9F%91%BE;Backend+Dev+%E2%86%92+AI+Engineer+Path" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -10,7 +10,7 @@
 
 ---
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="280" alt="coding gif" />
+
 
 ### `> whoami`
 
