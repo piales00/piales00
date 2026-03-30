@@ -85,10 +85,6 @@ Implementación del clásico **Tetris en Java**. Lógica de juego, manejo de est
 
 ### `> cat stats.json`
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=piales00&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00E6FF&icon_color=7C3AED&text_color=FFFFFF" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=piales00&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00E6FF&text_color=FFFFFF" width="49%" />
-</div>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=piales00&theme=radical&hide_border=true&background=0D1117&ring=00E6FF&fire=7C3AED&currStreakLabel=00E6FF" width="70%" />
