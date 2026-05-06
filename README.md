@@ -62,9 +62,9 @@ class PieroAlessandro:
 
 ### `> cat projects/`
 
-> Los proyectos marcados con 🟠 son parte de mi ruta de formación en NetSuite/SuiteScript.
 
-#### 🟠 [netsuite-order-automation-demo](https://github.com/piales00/netsuite-order-automation-demo)
+
+#### [netsuite-order-automation-demo](https://github.com/piales00/netsuite-order-automation-demo)
 
 Sistema completo de automatización de **Sales Orders en Oracle NetSuite**. Incluye User Event Scripts, Scheduled Scripts, RESTlet y Suitelet — deployado con SuiteCloud Development Framework (SDF).
 
@@ -74,7 +74,7 @@ Sistema completo de automatización de **Sales Orders en Oracle NetSuite**. Incl
 
 ---
 
-#### 🟠 [suitescript-restlet-suitelet-system](https://github.com/piales00/suitescript-restlet-suitelet-system)
+#### [suitescript-restlet-suitelet-system](https://github.com/piales00/suitescript-restlet-suitelet-system)
 
 Mini-sistema en NetSuite con **RESTlet** (API externa), **Suitelet** (dashboard interno) y **Scheduled Script** de limpieza automática. Testeable desde Postman.
 
@@ -83,7 +83,7 @@ Mini-sistema en NetSuite con **RESTlet** (API externa), **Suitelet** (dashboard 
 
 ---
 
-#### 🟠 [suitescript-search-scheduled-demo](https://github.com/piales00/suitescript-search-scheduled-demo)
+#### [suitescript-search-scheduled-demo](https://github.com/piales00/suitescript-search-scheduled-demo)
 
 Uso avanzado de **N/search** en SuiteScript 2.x con filtros, columnas y governance-aware pagination. Incluye Scheduled Script que genera reportes mensuales automáticamente.
 
@@ -138,7 +138,7 @@ Implementación del clásico **Tetris en Java** — lógica de juego, manejo de 
 <br/>
 
 <div align="center">
-  <sub>⚡ Enfocado en Oracle NetSuite · SuiteScript 2.x · ERP Customization para Latam</sub>
+
   <br/>
   <sub>Universidad Tecnológica del Perú · Lima 🇵🇪</sub>
 </div>
