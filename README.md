@@ -17,7 +17,7 @@ class PieroAlessandro:
     role        = "NetSuite Developer (in training)"
     focus       = "SuiteScript 2.x · ERP Customization · API Integrations"
     university  = "Universidad Tecnológica del Perú"
-    cycle       = "5to ciclo · Ing. de Sistemas"
+    cycle       = "5to ciclo · Ing. de Software"
     location    = "Lima, Perú 🇵🇪"
     email       = "pialeperez@gmail.com"
 
