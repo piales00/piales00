@@ -17,6 +17,7 @@ Currently learning Oracle NetSuite from the ground up.
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=7C3AED" />
 <img src="https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=7C3AED" />
 <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=7C3AED" />
+</div>
 
 <br>
 
@@ -37,8 +38,6 @@ motto       = "quien tiene un porqué soporta casi cualquier cómo."
 ---
 
 ### `// projects`
-
-</div>
 
 **[netsuite-order-automation-demo](https://github.com/piales00/netsuite-order-automation-demo)**
 `SuiteScript · SDF`
