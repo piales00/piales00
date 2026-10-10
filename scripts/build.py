@@ -5,6 +5,7 @@ Usage: python3 scripts/build.py   (needs an authenticated `gh` for the contribut
 Edit the data block below or assets/avatar.txt, then re-run.
 """
 import json
+import re
 import subprocess
 import textwrap
 from pathlib import Path
@@ -26,16 +27,16 @@ INFO = [
     ("", "soporta casi cualquier cómo."),
 ]
 PROMPT = "building on NetSuite, one script at a time."
-STACK = ["SuiteScript 2.x", "JavaScript", "Python", "FastAPI", "Node.js", "PostgreSQL", "Docker", "Git"]
+# (label, icon) — icons are simple-icons slugs vendored in assets/icons/
+STACK = [("SuiteScript", "oracle"), ("JavaScript", "javascript"), ("Python", "python"), ("FastAPI", "fastapi"),
+         ("Node.js", "nodedotjs"), ("PostgreSQL", "postgresql"), ("Docker", "docker"), ("Git", "git")]
 PROJECTS = [
-    ("netsuite-order-automation-demo", "SuiteScript · SDF",
-     "Automatización completa de Sales Orders en NetSuite. User Event, Scheduled Scripts, RESTlet y Suitelet deployados con SDF."),
-    ("suitescript-restlet-suitelet-system", "SuiteScript · Postman",
-     "Mini-sistema con RESTlet (API externa), Suitelet (dashboard) y Scheduled Script de limpieza automática."),
-    ("ALEPH — GenLayer Hackathon", "Python · FastAPI · Blockchain",
-     "Arbitraje descentralizado con validadores LLM y consenso via Optimistic Democracy en GenLayer."),
-    ("suitescript-search-scheduled-demo", "N/search · SuiteScript",
-     "Uso avanzado de N/search con filtros y governance-aware pagination. Reportes mensuales automáticos."),
+    ("masi", "Stellar · Rust · React", ["stellar", "rust", "react", "typescript"],
+     "Marketplace de servicios para el hogar: el pago queda retenido en un contrato Soroban hasta que apruebas el trabajo."),
+    ("java-ide.nvim", "Neovim · Lua · Java", ["neovim", "lua", "openjdk", "springboot"],
+     "Plugin de Neovim para trabajar Java como en IntelliJ: crea proyectos Maven y Spring Boot, clases, y corre tests sin salir del editor."),
+    ("TwinSlot", "Python · FastAPI · React", ["python", "fastapi", "react", "scikitlearn"],
+     "Sombra digital de reslotting: recomienda en qué zona del almacén debería vivir cada SKU, con optimización y Machine Learning."),
 ]
 CONTACT = ["linkedin", "dev.to", "email"]
 
@@ -49,7 +50,8 @@ FONT = 13
 CW = FONT * 0.6          # monospace advance
 GAP = 6                  # transparent margin around each window, like hyprland gaps
 RADIUS = 12
-FULL, HALF, THIRD = 900, 450, 300
+FULL, THIRD = 900, 300
+PROJECT_COLS = int((THIRD - 2 * (GAP + 20)) / CW)
 
 STYLE = f'''text {{ font: {FONT}px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }}
 .art, .cell {{ opacity: 0; animation: in .5s ease-out forwards; }}
@@ -68,6 +70,11 @@ def text(x, y, body, cls, extra=""):
     # nbsp: plain spaces collapse in renderers that ignore white-space on svg text
     body = escape(body).replace(" ", " ")
     return f'<text x="{x:.1f}" y="{y:.1f}" class="{cls}"{extra}>{body}</text>'
+
+
+def icon(name, x, y, size, fill="#c4b5fd"):
+    d = re.search(r'<path d="([^"]+)"', (ASSETS / "icons" / f"{name}.svg").read_text()).group(1)
+    return f'<path transform="translate({x:.1f} {y:.1f}) scale({size / 24:.4f})" fill="{fill}" d="{d}"/>'
 
 
 def window(w, h, body, label, active=False, shift=0):
@@ -147,12 +154,15 @@ def stack():
     x0, y = GAP + 22, GAP + 34
     out = [text(x0, y, "❯", "key"), text(x0 + 2 * CW, y, "ls ~/stack", "val")]
     x, y = x0, y + 18
-    for name in STACK:
-        w = len(name) * CW + 24
+    for name, slug in STACK:
+        w = len(name) * CW + 40
+        if x + w > FULL - x0:
+            x, y = x0, y + 36
         out.append(f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="28" rx="14" fill="#ffffff" fill-opacity=".05" stroke="#a78bfa" stroke-opacity=".45"/>')
-        out.append(text(x + 12, y + 18.5, name, "val"))
-        x += w + 10
-    return window(FULL, y + 28 + 22 + GAP, out, "Stack: " + ", ".join(STACK), shift=2)
+        out.append(icon(slug, x + 10, y + 7, 14))
+        out.append(text(x + 30, y + 18.5, name, "val"))
+        x += w + 8
+    return window(FULL, y + 28 + 22 + GAP, out, "Stack: " + ", ".join(n for n, _ in STACK), shift=2)
 
 
 def calendar():
@@ -190,13 +200,15 @@ def contrib():
     return window(FULL, y + 7 * step + 20 + GAP, out, f"{total} on GitHub")
 
 
-def project(i, name, tags, blurb):
+def project(i, name, tags, icons, blurb, rows):
     x0, y = GAP + 20, GAP + 34
-    out = [text(x0, y, name, "key b"), text(HALF - x0, y, "↗", "dim", ' text-anchor="end"'),
-           text(x0, y + 22, tags, "cyan")]
-    for n, l in enumerate(textwrap.wrap(blurb, int((HALF - 2 * x0) / CW))):
+    out = [text(x0, y, name, "key b"), text(x0, y + 22, tags, "cyan")]
+    for n, l in enumerate(textwrap.wrap(blurb, PROJECT_COLS)):
         out.append(text(x0, y + 50 + n * 20, l, "val"))
-    return window(HALF, 156, out, f"{name} — {tags}. {blurb}", shift=i)
+    y += 50 + rows * 20
+    out += [icon(slug, x0 + n * 28, y, 18) for n, slug in enumerate(icons)]
+    out.append(text(THIRD - x0, y + 14, "↗", "dim", ' text-anchor="end"'))
+    return window(THIRD, y + 18 + 20 + GAP, out, f"{name} — {tags}. {blurb}", shift=i)
 
 
 def contact(i, name):
@@ -205,7 +217,8 @@ def contact(i, name):
 
 def build():
     tiles = {"bar": bar(), "card": card(), "stack": stack(), "contrib": contrib()}
-    tiles |= {f"project-{i + 1}": project(i, *p) for i, p in enumerate(PROJECTS)}
+    rows = max(len(textwrap.wrap(p[3], PROJECT_COLS)) for p in PROJECTS)  # same height for every project tile
+    tiles |= {f"project-{i + 1}": project(i, *p, rows) for i, p in enumerate(PROJECTS)}
     tiles |= {f"contact-{name.replace('.', '')}": contact(i, name) for i, name in enumerate(CONTACT)}
     for name, svg in tiles.items():
         (ASSETS / f"{name}.svg").write_text(svg)
