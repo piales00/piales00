@@ -1,13 +1,8 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3500&pause=1200&color=AAAAAA&center=true&vCenter=true&width=500&lines=building+on+NetSuite%2C+one+script+at+a+time.;terminal+first%2C+always.;SuiteScript+2.x+%7C+Python+%7C+FastAPI)](https://git.io/typing-svg)
+<img src="assets/card.svg" width="100%" alt="Piero Pérez — NetSuite Developer (in training). SuiteScript 2.x · ERP · API Integrations. Lima, Perú." />
 
-### Piero Pérez
-
-Building **ERP automations**, **backend tools**, and things that probably shouldn't exist.
-Currently learning Oracle NetSuite from the ground up.
-
-<br>
+<br><br>
 
 <img src="https://img.shields.io/badge/SuiteScript_2.x-0d1117?style=for-the-badge&logo=oracle&logoColor=7C3AED" />
 <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=7C3AED" />
@@ -21,16 +16,6 @@ Currently learning Oracle NetSuite from the ground up.
 
 <br>
 
-```python
-role        = "NetSuite Developer (in training)"
-focus       = "SuiteScript 2.x · ERP · API Integrations"
-stack       = ["JavaScript ES6+", "Python", "FastAPI", "PostgreSQL"]
-learning    = ["Oracle NetSuite", "SDF", "Order-to-Cash"]
-motto       = "quien tiene un porqué soporta casi cualquier cómo."
-```
-
-<br>
-
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=piales00&bg_color=0d1117&color=7C3AED&line=7C3AED&point=ffffff&hide_border=true&area=true&area_color=7C3AED&custom_title=Contribution%20Graph" alt="Contribution Graph" />
 
 <br>
@@ -39,21 +24,44 @@ motto       = "quien tiene un porqué soporta casi cualquier cómo."
 
 ### `// projects`
 
-**[netsuite-order-automation-demo](https://github.com/piales00/netsuite-order-automation-demo)**
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**[netsuite-order-automation-demo](https://github.com/piales00/netsuite-order-automation-demo)**<br>
 `SuiteScript · SDF`
+
 Automatización completa de Sales Orders en NetSuite. User Event, Scheduled Scripts, RESTlet y Suitelet deployados con SDF.
 
-**[suitescript-restlet-suitelet-system](https://github.com/piales00/suitescript-restlet-suitelet-system)**
+</td>
+<td width="50%" valign="top">
+
+**[suitescript-restlet-suitelet-system](https://github.com/piales00/suitescript-restlet-suitelet-system)**<br>
 `SuiteScript · Postman`
+
 Mini-sistema con RESTlet (API externa), Suitelet (dashboard) y Scheduled Script de limpieza automática.
 
-**[ALEPH — GenLayer Hackathon](https://github.com/ValentinoCafu/ALEPH)**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[ALEPH — GenLayer Hackathon](https://github.com/ValentinoCafu/ALEPH)**<br>
 `Python · FastAPI · Blockchain`
+
 Arbitraje descentralizado con validadores LLM y consenso via Optimistic Democracy en GenLayer.
 
-**[suitescript-search-scheduled-demo](https://github.com/piales00/suitescript-search-scheduled-demo)**
+</td>
+<td width="50%" valign="top">
+
+**[suitescript-search-scheduled-demo](https://github.com/piales00/suitescript-search-scheduled-demo)**<br>
 `N/search · SuiteScript`
+
 Uso avanzado de N/search con filtros y governance-aware pagination. Reportes mensuales automáticos.
+
+</td>
+</tr>
+</table>
 
 ---
 

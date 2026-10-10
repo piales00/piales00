@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 474" width="900" height="474" role="img" aria-label="Piero Pérez — NetSuite Developer in training. SuiteScript 2.x, JavaScript, Python, FastAPI. Lima, Perú.">
+<style>
+text { font: 13px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+.art { fill: #c9d1d9; opacity: 0; animation: in .5s ease-out forwards; }
+.user { fill: #a78bfa; font-weight: 700; }
+.key { fill: #a78bfa; }
+.val { fill: #c9d1d9; }
+.dim, .title { fill: #6e7681; }
+.cursor { fill: #a78bfa; animation: blink 1.1s steps(1) infinite; }
+@keyframes in { to { opacity: 1; } }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .art { animation: none; opacity: 1; } .cursor { animation: none; } }
+</style>
+<rect x="0.5" y="0.5" width="899" height="473" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 36.5H899.5" stroke="#30363d"/>
+<circle cx="22" cy="18" r="6" fill="#ff5f57"/><circle cx="42" cy="18" r="6" fill="#febc2e"/><circle cx="62" cy="18" r="6" fill="#28c840"/>
+<text x="450.0" y="23" text-anchor="middle" class="title">piales00 — neofetch</text>
+<text x="180.0" y="88.1" class="art" textLength="54.6" lengthAdjust="spacingAndGlyphs" style="animation-delay:45ms">...::-.</text>
+<text x="164.4" y="103.7" class="art" textLength="124.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:90ms">=-.    .-.::..::</text>
+<text x="156.6" y="119.3" class="art" textLength="148.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:135ms">*+:.      .    .-+:</text>
+<text x="141.0" y="134.9" class="art" textLength="179.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:180ms">-=:                .-+=</text>
+<text x="133.2" y="150.5" class="art" textLength="195.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:225ms">==.      .--=--:.:     -:</text>
+<text x="117.6" y="166.1" class="art" textLength="218.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:270ms">.+.    :+%@@@@@@@@+%#+:   =-</text>
+<text x="117.6" y="181.7" class="art" textLength="218.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:315ms">:*    =@@@@@@@@@@@#%@@@-  .+</text>
+<text x="117.6" y="197.3" class="art" textLength="218.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:360ms">:*   .@@@@@@@@@@@@%%%%@%  .=</text>
+<text x="125.4" y="212.9" class="art" textLength="210.6" lengthAdjust="spacingAndGlyphs" style="animation-delay:405ms">=   +@+-----%@%@*:---=%: =.</text>
+<text x="125.4" y="228.5" class="art" textLength="202.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:450ms">.: .-+#*+-+%+-#:*%-=##%..:</text>
+<text x="125.4" y="244.1" class="art" textLength="202.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:495ms">.*= +*@%#=#@+%@-*@+#@@@.++</text>
+<text x="125.4" y="259.7" class="art" textLength="202.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:540ms">:@*.#@#%%@@%%@@#=%@@%%%-@=</text>
+<text x="133.2" y="275.3" class="art" textLength="187.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:585ms">+%*@@@@@@@@@%@%+@@@@@@-#</text>
+<text x="141.0" y="290.9" class="art" textLength="163.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:630ms">-*+%@@@@#%%%%%%##@@@*</text>
+<text x="164.4" y="306.5" class="art" textLength="132.6" lengthAdjust="spacingAndGlyphs" style="animation-delay:675ms">:@@@@#**###**%@@#</text>
+<text x="172.2" y="322.1" class="art" textLength="117.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:720ms">.+%@@@@@@@@@@%=</text>
+<text x="172.2" y="337.7" class="art" textLength="109.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:765ms">=%-:*@@@@@@@+=</text>
+<text x="172.2" y="353.3" class="art" textLength="109.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:810ms">+@@*. :===--#%</text>
+<text x="133.2" y="368.9" class="art" textLength="163.8" lengthAdjust="spacingAndGlyphs" style="animation-delay:855ms">.:-.-@@@@@*:  .+@@* .</text>
+<text x="102.0" y="384.5" class="art" textLength="226.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:900ms">.:--:.  +@@@@@@@@@@@@@%=::-:.</text>
+<text x="63.0" y="400.1" class="art" textLength="296.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:945ms">.:---:.       .*%@@@@@@@@@@@*   .:--:.</text>
+<text x="39.6" y="415.7" class="art" textLength="351.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:990ms">.-=-:.              :=*#%%@%#*:        .:---.</text>
+<text x="31.8" y="431.3" class="art" textLength="374.4" lengthAdjust="spacingAndGlyphs" style="animation-delay:1035ms">=+:                                         .-=-</text>
+<text x="31.8" y="446.9" class="art" textLength="382.2" lengthAdjust="spacingAndGlyphs" style="animation-delay:1080ms">.                                              -.</text>
+<text x="444.0" y="103.8" class="user">piero@github</text>
+<text x="444.0" y="127.8" class="dim">────────────</text>
+<text x="444.0" y="151.8" class="key">role</text>
+<text x="522.0" y="151.8" class="val">NetSuite Developer (in training)</text>
+<text x="444.0" y="175.8" class="key">focus</text>
+<text x="522.0" y="175.8" class="val">SuiteScript 2.x · ERP · API Integrations</text>
+<text x="444.0" y="199.8" class="key">stack</text>
+<text x="522.0" y="199.8" class="val">JS ES6+ · Python · FastAPI · PostgreSQL</text>
+<text x="444.0" y="223.8" class="key">learning</text>
+<text x="522.0" y="223.8" class="val">Oracle NetSuite · SDF · Order-to-Cash</text>
+<text x="444.0" y="247.8" class="key">based</text>
+<text x="522.0" y="247.8" class="val">Lima, Perú · UTP</text>
+<text x="444.0" y="271.8" class="key">uptime</text>
+<text x="522.0" y="271.8" class="val">on GitHub since 2024</text>
+<text x="444.0" y="295.8" class="key">motto</text>
+<text x="522.0" y="295.8" class="val">quien tiene un porqué</text>
+<text x="444.0" y="319.8" class="key"></text>
+<text x="522.0" y="319.8" class="val">soporta casi cualquier cómo.</text>
+<rect x="444.0" y="348.6" width="26" height="16" fill="#2e1065"/>
+<rect x="470.0" y="348.6" width="26" height="16" fill="#4c1d95"/>
+<rect x="496.0" y="348.6" width="26" height="16" fill="#6d28d9"/>
+<rect x="522.0" y="348.6" width="26" height="16" fill="#7c3aed"/>
+<rect x="548.0" y="348.6" width="26" height="16" fill="#8b5cf6"/>
+<rect x="574.0" y="348.6" width="26" height="16" fill="#a78bfa"/>
+<rect x="600.0" y="348.6" width="26" height="16" fill="#c4b5fd"/>
+<rect x="626.0" y="348.6" width="26" height="16" fill="#ede9fe"/>
+<text x="444.0" y="403.8" class="key">❯</text>
+<text x="459.6" y="403.8" class="val">building on NetSuite, one script at a time.</text>
+<rect class="cursor" x="798.9" y="390.8" width="7.8" height="16"/>
+</svg>
