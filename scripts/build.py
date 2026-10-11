@@ -17,16 +17,16 @@ ASSETS = ROOT / "assets"
 LOGIN = "piales00"
 USER = "piero@github"
 INFO = [
-    ("role", "Full-Stack Developer · Multi-Agent Systems & AI"),
-    ("focus", "agent orchestration · spec-driven development · MCP"),
-    ("stack", "JS ES6+ · TypeScript · Python · FastAPI · PostgreSQL"),
+    ("role", "Full-Stack Developer · Multi-Agent AI"),
+    ("focus", "agent orchestration · spec-driven dev"),
+    ("stack", "JS · TS · Python · FastAPI · PostgreSQL"),
     ("learning", "Oracle NetSuite · SDF · Order-to-Cash"),
     ("based", "Lima, Perú · UTP"),
     ("uptime", "on GitHub since 2024"),
     ("motto", "only the ideas we actually live"),
     ("", "are of any value."),
 ]
-PROMPT = "building on NetSuite, one script at a time."
+PROMPT = "coding every day, one commit at a time."
 # (label, icon) — icons are simple-icons slugs vendored in assets/icons/
 STACK = [("SuiteScript", "oracle"), ("JavaScript", "javascript"), ("TypeScript", "typescript"), ("Python", "python"),
          ("FastAPI", "fastapi"), ("Node.js", "nodedotjs"), ("PostgreSQL", "postgresql"), ("Docker", "docker"), ("Git", "git")]
