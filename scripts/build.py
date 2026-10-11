@@ -30,6 +30,8 @@ PROMPT = "coding every day, one commit at a time."
 # (label, icon) — icons are simple-icons slugs vendored in assets/icons/
 STACK = [("SuiteScript", "oracle"), ("JavaScript", "javascript"), ("TypeScript", "typescript"), ("Python", "python"),
          ("FastAPI", "fastapi"), ("Node.js", "nodedotjs"), ("PostgreSQL", "postgresql"), ("Docker", "docker"), ("Git", "git")]
+# spec-driven development phases, one sub-agent each; phases in the same column run in parallel
+PIPELINE = [["explore"], ["propose"], ["spec", "design"], ["tasks"], ["apply"], ["verify"], ["archive"]]
 PROJECTS = [
     ("masi", "Stellar · Rust · React", ["stellar", "rust", "react", "typescript"],
      "Marketplace de servicios para el hogar: el pago queda retenido en un contrato Soroban hasta que apruebas el trabajo."),
@@ -61,9 +63,13 @@ STYLE = f'''text {{ font: {FONT}px ui-monospace, SFMono-Regular, "SF Mono", Menl
 .dim {{ fill: #8b949e; }}
 .cyan {{ fill: #67e8f9; }}
 .cursor {{ fill: #a78bfa; animation: blink 1.1s steps(1) infinite; }}
+.node {{ animation: run {len(PIPELINE) + 1}s linear infinite; }}
+.flow {{ stroke-dasharray: 3 5; animation: flow .8s linear infinite; }}
 @keyframes in {{ to {{ opacity: 1; }} }}
 @keyframes blink {{ 50% {{ opacity: 0; }} }}
-@media (prefers-reduced-motion: reduce) {{ .art, .cell {{ animation: none; opacity: 1; }} .cursor {{ animation: none; }} }}'''
+@keyframes run {{ 0%, 14%, 100% {{ fill-opacity: .05; stroke-opacity: .45; }} 3%, 10% {{ fill-opacity: .4; stroke-opacity: 1; }} }}
+@keyframes flow {{ to {{ stroke-dashoffset: -8; }} }}
+@media (prefers-reduced-motion: reduce) {{ .art, .cell {{ animation: none; opacity: 1; }} .cursor, .node, .flow {{ animation: none; }} }}'''
 
 
 def text(x, y, body, cls, extra=""):
@@ -165,6 +171,32 @@ def stack():
     return window(FULL, y + 28 + 22 + GAP, out, "Stack: " + ", ".join(n for n, _ in STACK), shift=2)
 
 
+def pipeline():
+    x0, y = GAP + 22, GAP + 34
+    agents = sum(len(col) for col in PIPELINE)
+    out = [text(x0, y, "❯", "key"), text(x0 + 2 * CW, y, "/sdd-new feature", "val"),
+           text(FULL - x0, y, f"1 orchestrator · {agents} sub-agents", "cyan", ' text-anchor="end"')]
+    top, h, lane = y + 18, 28, 36
+    rows = max(len(col) for col in PIPELINE)
+    mid = top + ((rows - 1) * lane + h) / 2
+    widths = [max(len(n) for n in col) * CW + 24 for col in PIPELINE]
+    gap = (FULL - 2 * x0 - sum(widths)) / (len(PIPELINE) - 1)
+    x, prev = x0, []
+    for i, (col, w) in enumerate(zip(PIPELINE, widths)):
+        here = [mid + (j - (len(col) - 1) / 2) * lane for j in range(len(col))]
+        for a in prev:
+            for b in here:
+                out.append(f'<path class="flow" d="M{x - gap:.1f} {a:.1f} C{x - gap / 2:.1f} {a:.1f} {x - gap / 2:.1f} {b:.1f} {x:.1f} {b:.1f}" '
+                           f'fill="none" stroke="#a78bfa" stroke-opacity=".6"/>')
+        for name, cy in zip(col, here):
+            out.append(f'<rect class="node" style="animation-delay:{i}s" x="{x:.1f}" y="{cy - h / 2:.1f}" width="{w:.1f}" height="{h}" rx="14" '
+                       f'fill="#a78bfa" fill-opacity=".05" stroke="#a78bfa" stroke-opacity=".45"/>')
+            out.append(text(x + w / 2, cy + 4.5, name, "val", ' text-anchor="middle"'))
+        x, prev = x + w + gap, here
+    label = "Agent pipeline: " + " → ".join(" + ".join(col) for col in PIPELINE)
+    return window(FULL, top + (rows - 1) * lane + h + 22 + GAP, out, label, shift=3)
+
+
 def calendar():
     query = ('{user(login:"%s"){contributionsCollection{contributionCalendar{totalContributions '
              'weeks{contributionDays{date weekday contributionLevel}}}}}}' % LOGIN)
@@ -216,7 +248,7 @@ def contact(i, name):
 
 
 def build():
-    tiles = {"bar": bar(), "card": card(), "stack": stack(), "contrib": contrib()}
+    tiles = {"bar": bar(), "card": card(), "stack": stack(), "pipeline": pipeline(), "contrib": contrib()}
     rows = max(len(textwrap.wrap(p[3], PROJECT_COLS)) for p in PROJECTS)  # same height for every project tile
     tiles |= {f"project-{i + 1}": project(i, *p, rows) for i, p in enumerate(PROJECTS)}
     tiles |= {f"contact-{name.replace('.', '')}": contact(i, name) for i, name in enumerate(CONTACT)}
