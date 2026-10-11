@@ -17,19 +17,19 @@ ASSETS = ROOT / "assets"
 LOGIN = "piales00"
 USER = "piero@github"
 INFO = [
-    ("role", "NetSuite Developer (in training)"),
-    ("focus", "SuiteScript 2.x · ERP · API Integrations"),
-    ("stack", "JS ES6+ · Python · FastAPI · PostgreSQL"),
+    ("role", "Full-Stack Developer · Multi-Agent Systems & AI"),
+    ("focus", "agent orchestration · spec-driven development · MCP"),
+    ("stack", "JS ES6+ · TypeScript · Python · FastAPI · PostgreSQL"),
     ("learning", "Oracle NetSuite · SDF · Order-to-Cash"),
     ("based", "Lima, Perú · UTP"),
     ("uptime", "on GitHub since 2024"),
-    ("motto", "quien tiene un porqué"),
-    ("", "soporta casi cualquier cómo."),
+    ("motto", "only the ideas we actually live"),
+    ("", "are of any value."),
 ]
 PROMPT = "building on NetSuite, one script at a time."
 # (label, icon) — icons are simple-icons slugs vendored in assets/icons/
-STACK = [("SuiteScript", "oracle"), ("JavaScript", "javascript"), ("Python", "python"), ("FastAPI", "fastapi"),
-         ("Node.js", "nodedotjs"), ("PostgreSQL", "postgresql"), ("Docker", "docker"), ("Git", "git")]
+STACK = [("SuiteScript", "oracle"), ("JavaScript", "javascript"), ("TypeScript", "typescript"), ("Python", "python"),
+         ("FastAPI", "fastapi"), ("Node.js", "nodedotjs"), ("PostgreSQL", "postgresql"), ("Docker", "docker"), ("Git", "git")]
 PROJECTS = [
     ("masi", "Stellar · Rust · React", ["stellar", "rust", "react", "typescript"],
      "Marketplace de servicios para el hogar: el pago queda retenido en un contrato Soroban hasta que apruebas el trabajo."),
