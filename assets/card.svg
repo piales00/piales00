@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 446" width="900" height="446" role="img" aria-label="Piero Pérez — Full-Stack Developer · Multi-Agent Systems &amp; AI. agent orchestration · spec-driven development · MCP. JS ES6+ · TypeScript · Python · FastAPI · PostgreSQL. Oracle NetSuite · SDF · Order-to-Cash. Lima, Perú · UTP">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 446" width="900" height="446" role="img" aria-label="Piero Pérez — Full-Stack Developer · Multi-Agent AI. agent orchestration · spec-driven dev. JS · TS · Python · FastAPI · PostgreSQL. Oracle NetSuite · SDF · Order-to-Cash. Lima, Perú · UTP">
 <style>
 text { font: 13px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
 .art, .cell { opacity: 0; animation: in .5s ease-out forwards; }
@@ -50,11 +50,11 @@ text { font: 13px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Lib
 <text x="448.0" y="83.8" class="key b">piero@github</text>
 <text x="448.0" y="107.8" class="dim">────────────</text>
 <text x="448.0" y="131.8" class="key">role</text>
-<text x="526.0" y="131.8" class="val">Full-Stack Developer · Multi-Agent Systems &amp; AI</text>
+<text x="526.0" y="131.8" class="val">Full-Stack Developer · Multi-Agent AI</text>
 <text x="448.0" y="155.8" class="key">focus</text>
-<text x="526.0" y="155.8" class="val">agent orchestration · spec-driven development · MCP</text>
+<text x="526.0" y="155.8" class="val">agent orchestration · spec-driven dev</text>
 <text x="448.0" y="179.8" class="key">stack</text>
-<text x="526.0" y="179.8" class="val">JS ES6+ · TypeScript · Python · FastAPI · PostgreSQL</text>
+<text x="526.0" y="179.8" class="val">JS · TS · Python · FastAPI · PostgreSQL</text>
 <text x="448.0" y="203.8" class="key">learning</text>
 <text x="526.0" y="203.8" class="val">Oracle NetSuite · SDF · Order-to-Cash</text>
 <text x="448.0" y="227.8" class="key">based</text>
@@ -74,6 +74,6 @@ text { font: 13px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Lib
 <rect x="604.0" y="328.6" width="26" height="16" fill="#c4b5fd"/>
 <rect x="630.0" y="328.6" width="26" height="16" fill="#ede9fe"/>
 <text x="448.0" y="383.8" class="key">❯</text>
-<text x="463.6" y="383.8" class="val">building on NetSuite, one script at a time.</text>
-<rect class="cursor" x="802.9" y="370.8" width="7.8" height="16"/>
+<text x="463.6" y="383.8" class="val">coding every day, one commit at a time.</text>
+<rect class="cursor" x="771.7" y="370.8" width="7.8" height="16"/>
 </svg>
