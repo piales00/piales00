@@ -412,4 +412,5 @@ text { font: 13px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Lib
 <rect class="cell" style="animation-delay:728ms" x="856.1" y="123.8" width="12.5" height="12.5" rx="3" fill="#ffffff" fill-opacity=".07"/>
 <rect class="cell" style="animation-delay:728ms" x="856.1" y="139.7" width="12.5" height="12.5" rx="3" fill="#ffffff" fill-opacity=".07"/>
 <rect class="cell" style="animation-delay:728ms" x="856.1" y="155.6" width="12.5" height="12.5" rx="3" fill="#ffffff" fill-opacity=".07"/>
+<rect class="cell" style="animation-delay:728ms" x="856.1" y="171.5" width="12.5" height="12.5" rx="3" fill="#ffffff" fill-opacity=".07"/>
 </svg>
